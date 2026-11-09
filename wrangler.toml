@@ -1,0 +1,23 @@
+name = "z"
+main = "index.js"
+compatibility_date = "2024-01-15"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Statistics configuration (optional)
+# Options: "none" (default, disable stats), "kv" (use KV storage), "d1" (use D1 database)
+STATS_TYPE = "none"
+# Google Analytics Measurement ID (optional, GA will not be enabled if not configured)
+# GA_MEASUREMENT_ID = "G-XXXXXXXXXX"
+
+# If using KV statistics, uncomment the following configuration
+# [[kv_namespaces]]
+# binding = "STATS_KV"
+# id = "your_kv_namespace_id"
+# preview_id = "your_preview_kv_namespace_id"
+
+# If using D1 statistics, uncomment the following configuration
+# [[d1_databases]]
+# binding = "STATS_DB"
+# database_name = "voicecafe-stats"
+# database_id = "your_d1_database_id"
